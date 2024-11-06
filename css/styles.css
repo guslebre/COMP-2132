@@ -206,11 +206,13 @@ hr {
     color: transparent;
     text-align: center;
     align-items: center;
+    transition: color 0.5s ease-in-out;
 }
 #won{
     color: transparent;
     text-align: center;
     align-items: center;
+    transition: color 0.5s ease-in-out;
 }
 
 
