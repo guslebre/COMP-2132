@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="./script/variables.js" defer></script>
+    <script src="./script/functions.js" defer></script>
+    <script src="./script/script.js" defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="toph"></nav>
+    </header>
+    <section class="hero">
+        <h1 id="javascript_message"></h1>
+        <p id="javascript_message2"></p>
+    </section>
+    <main>
+        
+        <div class="homediv">
+                <div class="HangmanDiv">
+                    <h1 id="gameOver">Game Over</h1>
+                    <h1 id="won">Reset game to try again</h1>
+                    <img id="hangpic" class="hangmanImg" src="./images/hangman-0.png">
+                    <h3 id="hint"></h1>
+                    <div id="wordsDiv" class="wordsDiv"></div>
+                    
+                            
+                </div>
+                <div class="TextInputDiv">
+                    <div class="input-container">
+                        <label for="Oneletter">Enter Letter</label>
+                        <br>
+                        <input type="text" id="Oneletter" maxlength="1" placeholder="A" pattern="[A-Za-z]" title="Only one letter allowed">
+                        <br>
+                        <button id="submitLetter" onclick="letterWasGuessed()">Submit Guess</button>
+                        <button id="resetGame" onclick="resetGame()">Reset Game</button>
+
+                        <br>
+                        <br>
+                        <h1>Guesses</h1>
+                        <br>
+                        <div id="guessedLettersDiv"></div>
+                        
+                    </div>
+                    
+                            
+                </div>
+        </div>
+       
+
+    </main>
+    
+
+    
+</body>
+</html>
