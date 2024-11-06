@@ -98,6 +98,5 @@ function resetGame(){
     submitButton.disabled = true;
     wordField.innerHTML = "";
     guessedLettersDiv.innerHTML = "";
-    gamewontext.style.display = "none";
     startGame();
 }
