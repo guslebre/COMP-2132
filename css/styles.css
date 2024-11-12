@@ -6,7 +6,8 @@
 
 body {
     font-family: "PT Sans", sans-serif;
-    background-color: #9c9eb3;
+    background-color: #1C1C1C; 
+    color: #c9d1d9; 
 }
 .footer {
     background-color: #333;
@@ -44,17 +45,17 @@ body {
     padding: 1rem;
     color: #F3FEB8;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Added for proper positioning */
+    position: relative; 
 }
 
 
 .hero {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-color: #2c2c2c;/*  #2c2c2c  #6a6a6a */
     color: white;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-    background-image: url(../images/bg1.jpg);
+    
 }
 
 .hero h1 {
@@ -67,7 +68,7 @@ body {
 }
 
 .homediv2{
-    background-color: #CAE6B2;
+    background-color: #2C3E50;
     box-sizing: border-box;
     margin: 3% 1%;
     padding: 15px;
@@ -106,7 +107,7 @@ hr {
 }
 
 .sectionUser{
-    background-color: #CAE6B2;
+    background-color: #2C3E50;
     box-sizing: border-box;
     margin: 3% 1%;
     padding: 15px;
@@ -116,14 +117,13 @@ hr {
     align-items: center;
     align-content: center;
 }
-.homediv{
-    background-color: #CAE6B2;
-    box-sizing: border-box;
+.homediv {
+    background: #161b22; 
     border-radius: 15px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* align-content: center; */
+    gap: 20px;
+    box-shadow: 0 8px 16px rgba(80, 44, 212, 0.5); /* Stronger shadow for more depth */
 }
 .errorP {
     font-size: 10px;
@@ -165,24 +165,28 @@ hr {
     border-radius: 10px;
 }
 .HangmanDiv {
+    background-color: #424A52; 
+    border: 2px solid #58a6ff; 
+    border-radius: 15px;
+    padding: 20px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    border: black 2px solid;
-    border-radius: 15px;
-    margin: 2%;
-    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.TextInputDiv{
+
+.TextInputDiv {
+    background-color: #161b22; /* Dark slate blue */
+    border: 2px solid #58a6ff; /* Light blue border */
+    border-radius: 15px;
+    padding: 20px;
+    width: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    border-radius: 15px;
-    margin: 2%;
-    width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -197,22 +201,17 @@ hr {
     margin: 10px;
     font-size: 50px;
     text-decoration: underline;
-    text-decoration-color: black;        /* Color of the underline */
+    text-decoration-color: black;        
     color: transparent;                  
 }
 
-#gameOver{
-    color: transparent;
+#gameOver, #won {
+    color: #161b22; 
+    font-size: 1.5rem;
     text-align: center;
-    align-items: center;
-    transition: color 0.5s ease-in-out;
+    margin-top: 10px;
 }
-#won{
-    color: transparent;
-    text-align: center;
-    align-items: center;
-    transition: color 0.5s ease-in-out;
-}
+
 
 
 .hangmanImg{
@@ -220,11 +219,12 @@ hr {
 }
 
 .input-container {
-    text-align: center;
-    background-color: #ffffff;
+    background-color: #1C1C1C; 
+    border: 2px solid #58a6ff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .input-container h2{
     display: inline-block;
@@ -232,46 +232,58 @@ hr {
 }
 label {
     font-size: 1.2em;
-    color: #333;
+    color: #c9d1d9; 
 }
 
 input[type="text"] {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     font-size: 1.5em;
-    border: 2px solid #0077b6;
+    border: 2px solid #58a6ff; 
     border-radius: 5px;
-    margin: 10px 0;
+    color: white; 
+    background-color: #1C1C1C; 
     outline: none;
+    margin: 10px 0;
 }
 
 input[type="text"]::placeholder {
-    color: #bbb;
-    font-size: 0.8em;
+    color: #161b22; /* Subtle gray placeholder */
 }
 
 button:disabled {
     background-color: #ccc; 
-    color: #666; 
+    color: #238636; 
     cursor: not-allowed; 
     transform: scale(0.98); 
     box-shadow: none; 
 }
 button {
     padding: 10px 20px;
-    background-color: #0077b6;
+    background-color: #238636; /* Dark green for buttons */
     color: #ffffff;
     font-size: 1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 2%;
+    margin-top: 10px;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #005f8d;
+    background-color: #4CAF50; /* Slightly lighter green on hover */
+}
+
+#guessedLettersDiv {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #1C1C1C; /* Dark background */
+    border: 1px solid #58a6ff; /* Light blue border */
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    color: #c9d1d9; /* Light gray text */
 }
 
 @media (min-width: 769px) {
@@ -296,7 +308,7 @@ button:hover {
         margin-left: 10%;
     }
     .homediv{
-        background-color: #CAE6B2;
+        background-color: #1C1C1C;
         box-sizing: border-box;
         margin: 3% 1%;
         padding: 15px;
