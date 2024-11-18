@@ -206,17 +206,22 @@ hr {
     color: transparent;                  
 }
 
-#gameOver, #won {
-    color: #161b22; 
-    font-size: 1.5rem;
+#gameOver{
+    color: transparent;
     text-align: center;
-    margin-top: 10px;
+    align-items: center;
+    transition: 2s;
 }
-
-
+#won{
+    color: transparent;
+    text-align: center;
+    align-items: center;
+    transition: 2s;
+}
 
 .hangmanImg{
     width: 20%;
+    
 }
 
 .input-container {
