@@ -205,6 +205,21 @@ hr {
     text-decoration-color: black;        
     color: transparent;                  
 }
+a {
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    padding: 6px;
+    border-radius: 15px;
+    transition: 1s;
+}
+a:hover{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #c9d1d9;
+    padding: 6px;
+    border-radius: 15px;
+}
 
 #gameOver{
     color: transparent;
